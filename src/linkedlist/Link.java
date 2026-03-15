@@ -1,7 +1,20 @@
 package src.linkedlist;
 
+class Node{
+    int data;
+    Node next;
+
+    Node(int data){
+        this.data = data;
+        this.next = null;
+    }
+}
 public class Link{
     public static void main(String args[]){
-        System.out.println("hello");
+        Node head = new Node(10);
+        Node second = new Node(20);
+        Node third = new Node(30);
+        head.next = second;
+        second.next = third;
     }
 }
