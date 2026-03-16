@@ -138,3 +138,41 @@ package src.linkedlist;
 //         System.out.println("null");
 //     }
 // }
+
+
+//inserting element at last
+// class Node{
+//     int data;
+//     Node next;
+
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// public class Link{
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+
+//         head.next = second;
+//         second.next = third;
+
+//         Node fourth = new Node(40);
+
+//         Node temp = head;
+//         while(temp.next!=null){
+//             temp = temp.next;
+//         }
+//         temp.next = fourth;
+
+//         temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data+"->");
+//             temp = temp.next;
+//         }
+//         System.out.println("null");
+
+//     }
+// }
