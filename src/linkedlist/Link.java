@@ -264,3 +264,73 @@ package src.linkedlist;
 //         System.out.println("null");
 //     }
 // }
+
+
+//How to remove node from beginning
+// class Node{
+//     int data;
+//     Node next;
+
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// public class Link{
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+
+//         head.next = second;
+//         second.next = third;
+
+//         head = head.next;  //head ko shift krdo, remove ho jyegi first node.
+
+//         Node temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data+"->");
+//             temp = temp.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
+
+
+//remove node from end
+// class Node{
+//     int data;
+//     Node next;
+
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// public class Link{
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+//         Node fourth = new Node(40);
+
+//         head.next = second;
+//         second.next = third;
+//         third.next = fourth;
+
+//         int position = 4;
+//         Node temp = head;
+//         for(int i = 1; i < position-1; i++){
+//             temp=temp.next;
+//         }
+//         temp.next = null;
+
+//         temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data+"->");
+//             temp = temp.next;
+//         }
+//         System.out.println("null");
+
+//     }
+// }
