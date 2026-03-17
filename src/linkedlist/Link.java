@@ -6,7 +6,7 @@ package src.linkedlist;
 
 //     Node(int data){
 //         this.data = data;
-//         this.next = null;
+//         this.next = null;   //address hum manually fill krte h isliye ise by default null value assign kr dete hai.
 //     }
 // }
 // public class Link{
@@ -14,7 +14,7 @@ package src.linkedlist;
 //         Node head = new Node(10);
 //         Node second = new Node(20);
 //         Node third = new Node(30);
-//         head.next = second;
+//         head.next = second;         //isme hum address assign kr rhe hai for next.
 //         second.next = third;
 //     }
 // }
@@ -174,5 +174,93 @@ package src.linkedlist;
 //         }
 //         System.out.println("null");
 
+//     }
+// }
+
+
+//inserting multiple elements at last:
+// class Node{
+//     int data;
+//     Node next;
+
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// public class Link{
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+
+//         head.next = second;
+//         second.next = third;
+
+//         Node newNode = new Node(40);
+//         Node newNode2 = new Node(50);
+//         Node newNode3 = new Node(60);
+//         Node temp = head;
+//         while(temp.next!=null){
+//             temp = temp.next;
+//         }
+//         temp.next = newNode;
+        
+//         while(temp.next!=null){
+//             temp=temp.next;
+//         }
+//         temp.next = newNode2;
+
+//         while(temp.next!=null){
+//             temp=temp.next;
+//         }
+//         temp.next = newNode3;
+
+//         temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data+"->");
+//             temp = temp.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
+
+
+//INSERTING ELEMENT IN BETWEEN
+// class Node{
+//     int data;
+//     Node next;
+
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// public class Link{
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+//         Node fourth = new Node(40);
+
+//         head.next = second;
+//         second.next = third;
+//         third.next = fourth;
+
+//         int position = 3;
+//         Node newNode = new Node(25);
+//         Node temp = head;
+//         for(int i = 1; i < position-1; i++){
+//             temp=temp.next;
+//         }
+//         newNode.next = temp.next;
+//         temp.next = newNode;
+
+//         temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data+"->");
+//             temp=temp.next;
+//         }
+//         System.out.println("null");
 //     }
 // }
