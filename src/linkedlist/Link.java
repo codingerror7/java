@@ -20,8 +20,7 @@ package src.linkedlist;
 // }
 
 
-// public class Link{
-//     static class Node{
+//     class Node{
 //         int data;
 //         Node next;
 
@@ -29,7 +28,8 @@ package src.linkedlist;
 //             this.data = data;
 //             this.next = null;
 //         }
-//     }
+
+// public class Link{
 //     public static void main(String args[]){
 //         Node head = new Node(10);
 //         Node second = new Node(20);
@@ -332,5 +332,67 @@ package src.linkedlist;
 //         }
 //         System.out.println("null");
 
+//     }
+// }
+
+
+//Multiple operations together:
+// class Node{
+//     int data;
+//     Node next;
+
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// public class Link{
+//     public static void main(String args[]){
+//         Node newNode = new Node(5);
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+//         Node fourth = new Node(40);
+//         Node fifth = new Node(50);
+
+//         head.next = second;
+//         second.next = third;
+//         third.next = fourth;
+
+//         newNode.next = head;
+//         head = newNode;
+
+//         int pos = 4;
+//         Node betNode = new Node(25);
+//         Node temp = head;
+//         for(int i = 1; i<pos-1; i++){
+//             temp = temp.next;
+//         }
+//         betNode.next = temp.next;
+//         temp.next = betNode;
+
+//         int newPos = 6;
+//         Node newNode2 = new Node(35);
+//         temp = head;
+//         for(int i = 1; i < newPos-1; i++){
+//             temp = temp.next;
+//         }
+//         newNode2.next = temp.next;
+//         temp.next = newNode2;
+
+        
+        
+//         temp = head;
+//         while(temp.next!=null){
+//             temp = temp.next;
+//         }
+//         temp.next = fifth;
+
+//         temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data + "->");
+//             temp = temp.next;
+//         }
+//         System.out.println("null");
 //     }
 // }
