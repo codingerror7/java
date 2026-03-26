@@ -1,5 +1,7 @@
 package src.linkedlist;
 
+import java.util.Scanner;
+
 // class Node{
 //     int data;
 //     Node next;
@@ -482,5 +484,139 @@ package src.linkedlist;
 //         }
 //         System.out.println("null");
 //         System.out.println("the size of list is:" + " " + count);
+//     }
+// }
+
+
+//built in method for linear search:
+// import java.util.LinkedList;
+// public class Link{
+//     public static void main(String args[]){
+//         LinkedList ll = new LinkedList();
+//         ll.add(1);
+//         ll.add(3);
+//         ll.add(2);
+//         ll.add(7);
+//         ll.add(9);
+
+//         System.out.println(ll.indexOf(9));
+//     }
+// }
+
+
+//linear search by built in methods:
+// import java.util.LinkedList;;
+
+// public class Link{
+//     public static int fn(LinkedList<Integer> ll, int key){
+//         for(int i = 0; i <= ll.size(); i++){
+//             if(ll.get(i)==key){
+//                 return i;
+//             }
+//         }
+//         return -1;
+//     }
+//     public static void main(String args[]){
+//         LinkedList<Integer> ll = new LinkedList<>();
+//         ll.add(1);  //to add
+//         ll.add(3);
+//         ll.add(4);
+//         ll.add(5);
+//         ll.add(7);
+//         ll.add(9);
+//         ll.add(10);
+//         ll.remove(4);  //to remove
+
+//         System.out.println(ll);
+//         int res = fn(ll, 9);
+//         if(res==-1){
+//             System.out.println("Key npt found..");
+//         }
+//         else{
+//             System.out.println("Key is at index" + " " + res);
+//         }
+//     }
+// }
+
+
+
+//input programme to find key:
+// import java.util.Scanner;
+// public class Link{
+//     static class Node{
+//         int data;
+//         Node next;
+
+//         Node(int data){
+//             this.data = data;
+//             this.next = null;
+//         }
+//     }
+//     public static int fn(Node head, int key){
+//         int i = 0;
+//         Node temp = head;
+//         while(temp!=null){
+//             if(temp.data==key){
+//                 return i;
+//             }
+//             temp = temp.next;
+//             i++;
+//         }
+//         return -1;
+//     }
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+//         Node fourth = new Node(40);
+//         Node fifth = new Node(50);
+
+//         head.next = second;
+//         second.next = third;
+//         third.next = fourth;
+//         fourth.next = fifth;
+
+//         Node temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data + "->");
+//             temp=temp.next;
+//         }
+//         System.out.println("null");
+
+//         System.out.println("Please enter key:");
+//         int key = sc.nextInt();
+
+//         int res = fn(head, key);
+//         if(res==-1){
+//             System.out.println("Key not found..");
+//         }
+//         else{
+//             System.out.println("key is present at index" + " " + res);
+//         }
+
+//     }
+// }
+
+
+// import java.util.LinkedList;
+
+// public class Link{
+//     public static void main(String args[]){
+//         LinkedList<Integer> ll = new LinkedList<>();
+//         ll.add(10);
+//         ll.add(20);
+//         ll.add(30);
+//         ll.add(40);
+//         ll.add(50);
+//         ll.add(60);
+//         ll.add(70);
+//         ll.add(80);
+
+//         for(int i=7; i>=0; i--){
+//             System.out.print(ll.get(i) + "->");
+//         }
+//         System.out.println("null");
 //     }
 // }
