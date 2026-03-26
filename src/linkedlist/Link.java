@@ -413,3 +413,38 @@ package src.linkedlist;
 //     }
 //}
 
+
+//calculate size of list:
+// class Node{
+//     int data;
+//     Node next;
+
+//     Node(int data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// public class Link{
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+//         Node fourth = new Node(40);
+
+//         int count = 0;
+
+//         head.next = second;
+//         second.next = third;
+//         third.next = fourth;
+
+//         Node temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data + "->");
+//             temp = temp.next;
+//             count = count+1;
+//         }
+//         System.out.println("null");
+//         System.out.println("size of list is" + " " + count);
+
+//     }
+// }
