@@ -448,3 +448,39 @@ package src.linkedlist;
 
 //     }
 // }
+
+
+//giving string as data in list:
+// class Node{
+//     String data;
+//     Node next;
+
+//     Node(String data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// public class Link{
+//     public static void main(String args[]){
+//         Node head = new Node("one");
+//         Node second = new Node("Second");
+//         Node third = new Node("Third");
+//         Node fourth = new Node("Fourth");
+//         Node fifth = new Node("Fifth");
+
+//         int count = 0;
+//         head.next = second;
+//         second.next = third;
+//         third.next = fourth;
+//         fourth.next = fifth;
+
+//         Node temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data + "->");
+//             temp=temp.next;
+//             count++;
+//         }
+//         System.out.println("null");
+//         System.out.println("the size of list is:" + " " + count);
+//     }
+// }
