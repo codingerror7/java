@@ -380,8 +380,6 @@ package src.linkedlist;
 //         newNode2.next = temp.next;
 //         temp.next = newNode2;
 
-        
-        
 //         temp = head;
 //         while(temp.next!=null){
 //             temp = temp.next;
@@ -396,3 +394,22 @@ package src.linkedlist;
 //         System.out.println("null");
 //     }
 // }
+
+
+
+//using built-in class for creating linked list, its not used in dsa but is useful in developing apps. Issey doubly linked list hi create hoti hai.
+// import java.util.LinkedList;
+
+// public class Link{
+//     public static void main(String args[]){
+//         LinkedList<String> l = new LinkedList<>();
+//         l.add("suji");
+//         l.add("ronaldo");
+//         l.add("messi");
+//         l.add("neymar");
+//         l.add("pogba");
+
+//         System.out.println(l);
+//     }
+//}
+
