@@ -620,3 +620,82 @@ import java.util.Scanner;
 //         System.out.println("null");
 //     }
 // }
+
+
+//how to create cycle
+// public class Link{
+//     static class Node{
+//         int data;
+//         Node next;
+
+//         Node(int data){
+//             this.data = data;
+//             this.next = null;
+//         }
+//     }
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+//         Node fourth = new Node(40);
+
+//         head.next = second;
+//         second.next = third;
+//         third.next = fourth;
+//         fourth.next = second;
+
+//         Node temp = head;
+//         while(temp!=null){
+//             System.out.print(temp.data + "->");
+//             temp=temp.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
+
+
+//floyd's cycle detection algorithm
+// public class Link{
+//     static class  Node{
+//         int data;
+//         Node next;
+
+//         Node(int data){
+//             this.data = data;
+//             this.next = null;
+//         }
+//     }
+//     public static boolean isCycle(Node head){
+//         Node slow = head;
+//         Node fast = head;
+
+//         while(fast!=null && fast.next!=null){
+//             slow = slow.next; //+1
+//             fast = fast.next.next; //+2
+//             if(slow==fast){
+//                 return true;
+//             }
+//         }
+//         return false;
+//     }
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+//         Node four = new Node(40);
+
+//         head.next = second;
+//         second.next = third;
+//         third.next = four;
+//         four.next = second;
+
+//         boolean res = isCycle(head);
+//         if(res==true){
+//             System.out.println("cycle detected");
+//         }
+//         else{
+//             System.out.println("no cycle..");
+//         }
+
+//     }
+// }
