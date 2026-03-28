@@ -39,10 +39,10 @@ import java.util.Scanner;
 //         head.next = second;
 //         second.next = third;
 
-//         Node temp = head;
-//         while(temp!=null){
+//         Node temp = head;    //initialisation
+//         while(temp!=null){   //condtion
 //             System.out.print(temp.data + "->");
-//             temp = temp.next;
+//             temp = temp.next;    //updation
 //         }
 //         System.out.println("null");
 //     }
@@ -541,7 +541,6 @@ import java.util.Scanner;
 
 
 //input programme to find key:
-// import java.util.Scanner;
 // public class Link{
 //     static class Node{
 //         int data;
@@ -559,41 +558,38 @@ import java.util.Scanner;
 //             if(temp.data==key){
 //                 return i;
 //             }
-//             temp = temp.next;
+//             temp=temp.next;
 //             i++;
 //         }
 //         return -1;
 //     }
 //     public static void main(String args[]){
 //         Scanner sc = new Scanner(System.in);
-
 //         Node head = new Node(10);
 //         Node second = new Node(20);
 //         Node third = new Node(30);
 //         Node fourth = new Node(40);
-//         Node fifth = new Node(50);
 
 //         head.next = second;
 //         second.next = third;
 //         third.next = fourth;
-//         fourth.next = fifth;
 
 //         Node temp = head;
 //         while(temp!=null){
-//             System.out.print(temp.data + "->");
+//             System.out.print(temp.data + "=>");
 //             temp=temp.next;
 //         }
 //         System.out.println("null");
 
-//         System.out.println("Please enter key:");
+//         System.out.println("enter key:");
 //         int key = sc.nextInt();
 
 //         int res = fn(head, key);
 //         if(res==-1){
-//             System.out.println("Key not found..");
+//             System.out.println("nothing found..");
 //         }
 //         else{
-//             System.out.println("key is present at index" + " " + res);
+//             System.out.println("key at index" + " " + res);
 //         }
 
 //     }
@@ -699,3 +695,40 @@ import java.util.Scanner;
 
 //     }
 // }
+
+
+//delete last node
+// public class Link{
+//     static class Node{
+//         int data;
+//         Node next;
+
+//         Node(int data){
+//             this.data = data;
+//             this.next = null;
+//         }
+//     }
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+
+//         head.next = second;
+//         second.next = third;
+
+//         Node temp = head;
+//         while(temp.next.next!=null){
+//             temp = temp.next;
+//         }
+//         temp.next = null;
+
+//         temp=head;
+//         while(temp!=null){
+//             System.out.print(temp.data + "->");
+//             temp=temp.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
+
+
