@@ -732,3 +732,53 @@ import java.util.Scanner;
 // }
 
 
+// public class Link{
+//     static class Node{
+//         int data;
+//         Node next;
+
+//         Node(int data){
+//             this.data = data;
+//             this.next = null;
+//         }
+//     }
+//     public static void main(String args[]){
+//         Node head = new Node(10);
+//         Node second = new Node(20);
+//         Node third = new Node(30);
+
+//         head.next = second;
+//         second.next = third;
+
+//         Node newNode = new Node(25);
+
+//         int pos = 2;
+//         Node temp = head;
+//         for(int i =0; i < pos-1; i++){
+//             temp=temp.next;
+//         }
+//         newNode.next = temp.next;
+//         temp.next = newNode;
+
+//         head=head.next;
+
+//         temp=head;
+//         while(temp.next.next!=null){
+//             temp=temp.next;
+//         }
+//         temp.next = null;
+
+//         temp=head;
+//         for(int i = 2; i > 0; i--){
+//             temp=temp.next;
+//             System.out.println();
+//         }
+
+//         temp=head;
+//         while(temp!=null){
+//             System.out.print(temp.data+"=>");
+//             temp=temp.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
