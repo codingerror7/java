@@ -51,6 +51,9 @@
 //             return false;
 //         }
 //         public static void push(int data){
+//             if(l.size()==0){
+//             System.out.prinltn("empty stack");
+//}
 //             l.get(l.size()-1);
 //         }
 //         public static int pop(){
