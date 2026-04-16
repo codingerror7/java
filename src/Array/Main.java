@@ -19,7 +19,7 @@ import java.util.*;
 //             System.out.println(arr[i]);
 //         }
 //         Boolean flag = false;
-//         //nested loop to comapre elements inside array:
+//         //nested loop to compare elements inside array:
 //         for(int i = 0; i<arr.length; i++){
 //             for(int j = i+1; j<arr.length; j++){
 //                 if(arr[i]==arr[j]){
@@ -131,7 +131,7 @@ import java.util.*;
 
 //pair of elements in array:
 // public class Main{
-//     public static int pair(int arr[]){
+//     public static void pair(int arr[]){
 //         int tp = 0;
 //         for(int i = 0; i < arr.length; i++){
 //             int curr = arr[i];
@@ -141,7 +141,6 @@ import java.util.*;
 //             }
 //         }
 //         System.out.println("total no. of pair is " + tp);
-//         return -1;
 //     }
 //     public static void main(String args[]){
 //         int arr[] = {2,4,6,8,10};
@@ -171,3 +170,33 @@ import java.util.*;
 //         subArr(arr);
 //     }
 // }
+
+
+//max sub array programme:
+// public class Main{
+//     public static void maxSubArrSum(int arr[]){
+//         int curr = 0;
+//         int max = Integer.MIN_VALUE;
+//         for(int i = 0; i <arr.length; i++){
+//             int start = i;
+//             for(int j = i; j < arr.length; j++){
+//                 int end = j;
+//                 curr=0;
+//                 for(int k = start; k<=end; k++){
+//                     curr+=arr[k];
+//                     System.out.println(curr);
+//                     if(max<curr){
+//                         max=curr;
+//                     }
+//                 }
+//             }
+//         }
+//         System.out.println("max sum is " + max);
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {2,4,6,8,10};
+//         maxSubArrSum(arr);
+//     }
+// }
+
+
