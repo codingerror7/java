@@ -200,3 +200,41 @@ import java.util.*;
 // }
 
 
+
+//trapped rainwater problem:
+// public class Main{
+//     public static int trappedRainWater(int height[])
+//     {
+//         int n = height.length;
+//         int width = 1;
+//         int left[] = new int[n];
+
+//         //calculate maximum leftmost boundary:
+//         left[0] = height[0];
+//         for(int i = 1; i < n; i++){
+//             left[i] = Math.max(height[i],left[i-1]);
+//         }
+
+//         //calculate maximum rightmost boundary:
+//         int right[] = new int[n];
+//         right[n-1] = height[n-1];
+//         for(int i = n-2; i >= 0; i--){
+//             right[i] = Math.max(height[i],right[i+1]);
+//         }
+
+//         int trappedWater = 0;
+//         for(int i = 0; i < n; i++){
+//             int waterLevel = Math.min(left[i],right[i]);
+
+//             //formula to calculate total waterlevel:
+//             trappedWater += (waterLevel - height[i]) * width;
+//         }
+
+//         return trappedWater;
+//     }
+//     public static void main(String args[]){
+//         int height[] = {4,2,0,6,3,2,5};
+//         int res = trappedRainWater(height);
+//         System.out.println("total water trapped is " + res);
+//     }
+// }
