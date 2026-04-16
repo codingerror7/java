@@ -206,18 +206,18 @@ import java.util.*;
 //     public static int trappedRainWater(int height[])
 //     {
 //         int n = height.length;
-//         int width = 1;
-//         int left[] = new int[n];
+//         int width = 1;                 //width of each bar, it is usually 1 but in interviews they can change the height.
+//         int left[] = new int[n];   
 
 //         //calculate maximum leftmost boundary:
-//         left[0] = height[0];
+//         left[0] = height[0];             //take 1st index same to the height array coz it has no boundary.
 //         for(int i = 1; i < n; i++){
-//             left[i] = Math.max(height[i],left[i-1]);
+//             left[i] = Math.max(height[i],left[i-1]);     //compare current bar height and previouse bar height.
 //         }
 
 //         //calculate maximum rightmost boundary:
 //         int right[] = new int[n];
-//         right[n-1] = height[n-1];
+//         right[n-1] = height[n-1];     //begin from last bar.
 //         for(int i = n-2; i >= 0; i--){
 //             right[i] = Math.max(height[i],right[i+1]);
 //         }
@@ -233,8 +233,10 @@ import java.util.*;
 //         return trappedWater;
 //     }
 //     public static void main(String args[]){
-//         int height[] = {4,2,0,6,3,2,5};
+//         int height[] = {4,2,0,6,3,2,5};            //height of bars
 //         int res = trappedRainWater(height);
 //         System.out.println("total water trapped is " + res);
 //     }
 // }
+
+
