@@ -1,5 +1,6 @@
 package src.Array;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 
@@ -264,3 +265,24 @@ import java.util.*;
 // }
 
 
+//two sum code:
+// public class Main{
+//     public static int[] printSum(int arr[], int target){     //this is the compace way of making arrays.
+//         for(int i = 0; i < arr.length; i++){
+//             for(int j = i+1; j < arr.length; j++){
+//                 int sum = arr[i] + arr[j];
+//                 if(sum==target){
+//                     return new int[]{i,j};  //java ek time per ek hi chiz return kr skti hai, jab multiple values return krni hoti hai tab iska use krte hain.
+//                 }   
+//             }
+//         }
+//         return new int[]{};
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {5,2,3,5,6,7};
+//         int target = 7;
+//         int[] res = printSum(arr, target);
+//         System.out.println(Arrays.toString(res));   //arrays is an object, agar directly print kr denge to memory address return krega, isliye we use this method to print, it converts array elements into string. It has come from java.util.Arrays;
+
+//     }
+// }
