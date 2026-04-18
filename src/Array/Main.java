@@ -386,3 +386,38 @@ import java.util.*;
 //         }
 //     }
 // }
+
+
+//remove duplicates from sorted array:
+// public class Main{
+//     public static void removeDuplicate(int arr[]){
+//         int n = arr.length;
+//         int temp[] = new int[n];
+//         int k = 0;
+
+//         for(int i = 0; i < n; i++){
+//             Boolean isDuplicate = false;
+
+//             for(int j = 0; j < k; j++){
+//                 if(arr[i] == temp[j]){
+//                     isDuplicate = true;
+//                     break;
+//                 }
+//             }
+
+//             if(!isDuplicate){
+//                 temp[k] = arr[i];
+//                 k++;
+//             }
+//         }
+
+//         //print temp loop:
+//         for(int i = 0; i < k; i++){
+//             System.out.print(temp[i] + " ");
+//         }
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,1,2,2,2,3};
+//         removeDuplicate(arr);
+//     }
+// }
