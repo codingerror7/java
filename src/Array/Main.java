@@ -1,6 +1,7 @@
 package src.Array;
 
 import java.lang.reflect.Array;
+import java.net.Inet4Address;
 import java.util.*;
 
 
@@ -284,5 +285,29 @@ import java.util.*;
 //         int[] res = printSum(arr, target);
 //         System.out.println(Arrays.toString(res));   //arrays is an object, agar directly print kr denge to memory address return krega, isliye we use this method to print, it converts array elements into string. It has come from java.util.Arrays;
 
+//     }
+// }
+
+
+//to find second largest element in array:
+// public class Main{
+//     public static int printSecondLargest(int arr[]){
+//         int largest = Integer.MIN_VALUE;
+//         int secondLargest = Integer.MIN_VALUE;
+//         for(int i = 0; i < arr.length; i++){
+//             if(largest<arr[i]){
+//                 secondLargest = largest;
+//                 largest = arr[i];
+//             }
+//             else if(arr[i]>secondLargest && largest<arr[i]){
+//                 secondLargest=arr[i];
+//             }
+//         }
+//         return secondLargest;
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,2,3,4,5};
+//         int res = printSecondLargest(arr);
+//         System.out.println("second largest element is " + res);
 //     }
 // }
