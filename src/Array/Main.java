@@ -318,8 +318,6 @@ import java.util.*;
 //     public static int printSecondLargest(int arr[]){
 //         int largest = Integer.MIN_VALUE;
 //         int secondLargest = Integer.MIN_VALUE;
-//         //int smallest = Integer.MAX_VALUE;
-//         //int secondSmallest = Integer.MAX_VALUE;
 //         for(int i = 0; i < arr.length; i++){
 //             if(largest<arr[i]){
 //                 secondLargest = largest;
@@ -363,5 +361,28 @@ import java.util.*;
 //         int secondSmallest = printSecondSmallest(arr);
 //         System.out.println("secondlargest element is " + secondLargest);
 //         System.out.println("second smallest element is " + secondSmallest);
+//     }
+// }
+
+
+//check array is sorted or not
+// public class Main{
+//     public static Boolean isSort(int arr[]){
+//         for(int i = 0; i <= arr.length-2; i++){
+//             if(arr[i]<=arr[i+1]){
+//                 return true;
+//             }
+//         }
+//         return false;
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,2,3,4,5};
+//         Boolean res = isSort(arr);
+//         if(res){
+//             System.out.println("array is sorted");
+//         }
+//         else{
+//             System.out.println("array not sorted..");
+//         }
 //     }
 // }
