@@ -311,3 +311,57 @@ import java.util.*;
 //         System.out.println("second largest element is " + res);
 //     }
 // }
+
+
+//print second largest and second smallest element:
+// public class Main{
+//     public static int printSecondLargest(int arr[]){
+//         int largest = Integer.MIN_VALUE;
+//         int secondLargest = Integer.MIN_VALUE;
+//         //int smallest = Integer.MAX_VALUE;
+//         //int secondSmallest = Integer.MAX_VALUE;
+//         for(int i = 0; i < arr.length; i++){
+//             if(largest<arr[i]){
+//                 secondLargest = largest;
+//                 largest = arr[i];
+//             }
+//             else if(secondLargest>arr[i] && arr[i]!=largest){
+//                 secondLargest = arr[i];
+//             }
+//         }
+//         return secondLargest;
+//     }
+//     public static int printSecondSmallest(int arr[]){
+//         int smallest = Integer.MAX_VALUE;
+//         int secondSmallest = Integer.MAX_VALUE;
+//         for(int i = 0; i < arr.length; i++){
+//             if(smallest>arr[i]){
+//                 secondSmallest = smallest;
+//                 smallest = arr[i];
+//             }
+//             else if(secondSmallest>arr[i] && arr[i]!=smallest){
+//                 secondSmallest = arr[i];
+//             }
+//         }
+//         return secondSmallest;
+//     }
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter array size:");
+//         int n = sc.nextInt();
+//         System.out.println("array size is " + n);
+//         int arr[] = new int[n];
+//         System.out.println("enter array elements:");
+//         for(int i = 0; i < arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         System.out.println("array elements are:");
+//         for(int i = 0; i < arr.length; i++){
+//             System.out.println(arr[i]);
+//         }
+//         int secondLargest = printSecondLargest(arr);
+//         int secondSmallest = printSecondSmallest(arr);
+//         System.out.println("secondlargest element is " + secondLargest);
+//         System.out.println("second smallest element is " + secondSmallest);
+//     }
+// }
