@@ -495,3 +495,30 @@ import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardResizeToggleHandler;
 //         kRotateArray(arr);
 //     }
 // }
+
+
+//right rotate array by k places:  let k = 2
+// public class Main{
+//     public static void kRotateArraysByRight(int arr[]){
+//         int n = arr.length;
+//         int first = arr[4];
+//         int second = arr[5];
+//         int third = arr[6];
+
+//         for(int i = n-1; i > 2; i--){
+//             arr[i] = arr[i-3];
+//         }
+//         arr[0] = first;
+//         arr[1]  = second;
+//         arr[2] = third;
+
+//         System.out.println("when k=3, right rotate array is");
+//         for(int i = 0; i < n; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,2,3,4,5,6,7};
+//         kRotateArraysByRight(arr);
+//     }
+// }
