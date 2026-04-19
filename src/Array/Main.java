@@ -1,11 +1,6 @@
 package src.Array;
 
-import java.lang.reflect.Array;
-import java.net.Inet4Address;
-import java.security.Key;
 import java.util.*;
-
-import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardResizeToggleHandler;
 
 
 //find duplicate element in array:
