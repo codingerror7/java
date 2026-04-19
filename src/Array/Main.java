@@ -2,7 +2,10 @@ package src.Array;
 
 import java.lang.reflect.Array;
 import java.net.Inet4Address;
+import java.security.Key;
 import java.util.*;
+
+import javax.swing.plaf.basic.BasicSplitPaneUI.KeyboardResizeToggleHandler;
 
 
 //find duplicate element in array:
@@ -419,5 +422,76 @@ import java.util.*;
 //     public static void main(String args[]){
 //         int arr[] = {1,1,2,2,2,3};
 //         removeDuplicate(arr);
+//     }
+// }
+
+
+//left rotate array by one:
+// public class Main{
+//     public static void rotateArrayByOne(int arr[]){
+//         int n = arr.length;
+//         int temp = arr[0];
+
+//         for(int i = 0; i < n-1; i++){
+//             arr[i] = arr[i+1];        
+//         }
+//         arr[n-1] = temp;
+
+//         System.out.println("rotated array is:");
+//         for(int i = 0; i < n; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,2,3,4,5};
+//         rotateArrayByOne(arr);
+//     }
+// }
+
+
+//right rotate array by one
+// public class Main{
+//     public static void rotateArrayByRight(int arr[]){
+//         int n = arr.length;
+//         int last = arr[n-1];
+
+//         for(int i = n-1; i > 0; i--){
+//             arr[i] = arr[i-1];
+//         }
+//         arr[0] = last;
+
+//         System.out.println("right rotated array is:");
+//         for(int i = 0; i < n; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,2,3,4,5};
+//         rotateArrayByRight(arr);
+//     }
+// }
+
+
+//left rotate array by k places:  let k = 2
+// public class Main{
+//     public static void kRotateArray(int arr[]){
+//         int n = arr.length;
+//         int first = arr[0];
+//         int second = arr[1];
+
+//         for(int i = 0; i < n-2; i++){
+//             arr[i] = arr[i+2];
+//         }
+//         arr[3] = first;
+//         arr[4] = second;
+
+//         System.out.println("rotated array by k=2 places is");
+//         for(int i = 0; i < n; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,2,3,4,5};
+//         kRotateArray(arr);
 //     }
 // }
