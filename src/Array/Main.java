@@ -517,3 +517,36 @@ import java.util.*;
 //         kRotateArraysByRight(arr);
 //     }
 // }
+
+
+//move zeroes to end:
+// public class Main{
+//     public static void moveZeroToEnd(int arr[]){
+//         int n = arr.length;
+//         int temp[] = new int[n];
+//         int k = 0;
+
+//         for(int i = 0; i < n; i++){
+//                 if(arr[i] != 0){
+//                 temp[k] = arr[i];
+//                 k++;
+//             }
+
+//         }
+//         while(k<n){
+//             temp[k]=0;
+//             k++;
+//         }
+//         for(int i = 0; i < n; i++){
+//             arr[i] = temp[i];
+//         }
+//         for(int i = 0; i < n; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,2,0,4,0,0,5};
+//         moveZeroToEnd(arr);
+
+//     }
+// }
