@@ -550,3 +550,28 @@ import java.util.*;
 
 //     }
 // }
+ 
+
+//zero exist or not in array:
+// public class Main{
+//     public static Boolean findZero(int arr[], int zero){
+//         for(int i = 0; i < arr.length; i++){
+//             if(arr[i]==zero){
+//                 System.out.println("zero at index " + i);
+//                 return true;
+//             }
+//         }
+//         return false;
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,0,2,3,4,5};
+//         int zero = 0;
+//         Boolean res = findZero(arr, zero);
+//         if(res){
+//             System.out.println("zero present in array");
+//         }
+//         else{
+//             System.out.println("zero not present");
+//         }
+//     }
+// }
