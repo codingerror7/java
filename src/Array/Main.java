@@ -2,6 +2,8 @@ package src.Array;
 
 import java.util.*;
 
+import javax.swing.text.StyledEditorKit.BoldAction;
+
 
 //find duplicate element in array:
 // public class Main{
@@ -621,5 +623,45 @@ import java.util.*;
 //     int arr[] = {1,2,3,4,5,6,7,8,9,10};
 //     int arr2[] = {2,3,4,4,5,11,12};
 //     findUnion(arr, arr2);
+//     }
+// }
+
+
+//two sum by user input:
+// public class Main{
+//     public static Boolean twoSum(int arr[],int target){
+//         for(int i = 0; i < arr.length; i++){
+//             for(int j = i+1; j < arr.length; j++){
+//                 if(arr[i] + arr[j] == target){
+//                     System.out.println(arr[i] + "+" + arr[j] + " = " + target + " at index " + i + " and " + j );
+//                     return true;
+//                 }
+//             }
+//         }
+//         return false;
+//     }
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter array size:");
+//         int n = sc.nextInt();
+//         System.out.println("array size is " + n);
+//         int arr[] = new int[n];
+//         System.out.println("enter array elements:");
+//         for(int i = 0; i < n; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         System.out.println("array elements are:");
+//         for(int i = 0; i < n; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//         System.out.println("enter target:");
+//         int target = sc.nextInt();
+//         Boolean res = twoSum(arr, target);
+//         if(res){
+//             System.out.println("yess");
+//         }
+//         else{
+//             System.out.println("No");
+//         }
 //     }
 // }
