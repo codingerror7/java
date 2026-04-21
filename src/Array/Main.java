@@ -266,7 +266,7 @@ import java.util.*;
 
 //two sum code:
 // public class Main{
-//     public static int[] printSum(int arr[], int target){     //this is the compace way of making arrays.
+//     public static int[] printSum(int arr[], int target){     //this is the compact way of making arrays.
 //         for(int i = 0; i < arr.length; i++){
 //             for(int j = i+1; j < arr.length; j++){
 //                 int sum = arr[i] + arr[j];
@@ -573,5 +573,53 @@ import java.util.*;
 //         else{
 //             System.out.println("zero not present");
 //         }
+//     }
+// }
+
+
+//union of two arrays:
+// public class Main{
+//     public static void findUnion(int arr1[], int arr2[]){
+//         int n = arr1.length;
+//         int m = arr2.length;
+//         int temp[] = new int[n+m];
+//         int k = 0;
+
+//         //adding elements of first array to temp array:
+//         for(int i = 0; i < n; i++){
+//             Boolean isDuplicate = false;
+//             for(int j = 0; j < k; j++){
+//                 if(arr1[i]==temp[j]){
+//                     isDuplicate=true;
+//                     break;
+//                 }
+//             }
+//             if(!isDuplicate){
+//                 temp[k]=arr1[i];
+//                 k++;
+//             }
+//         }
+//         //adding elements of second array to temp array:
+//         for(int i = 0; i < m; i++){
+//             Boolean isDuplicate = false;
+//             for(int j = 0; j < k; j++){
+//                 if(arr2[i]==temp[j]){
+//                     isDuplicate = true;
+//                     break;
+//                 }
+//             }
+//             if(!isDuplicate){
+//                 temp[k]=arr2[i];
+//                 k++;
+//             }
+//         }
+//         for(int i = 0; i < k; i++){
+//             System.out.print(temp[i] + " ");
+//         }
+//     }
+//     public static void main(String args[]){
+//     int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//     int arr2[] = {2,3,4,4,5,11,12};
+//     findUnion(arr, arr2);
 //     }
 // }
