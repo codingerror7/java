@@ -665,3 +665,31 @@ import javax.swing.text.StyledEditorKit.BoldAction;
 //         }
 //     }
 // }
+
+
+//maximum consecutive ones:
+// public class Main{
+//     public static void consecutiveZero(int arr[]){
+//         int n = arr.length;
+//         int max = 0;
+//         for(int i = 0; i < n; i++){
+//             int count = 0;
+//             for(int j = i; j < n; j++){
+//                 if(arr[j]==1){
+//                     count++;
+//                 }
+//                 else{
+//                     break;
+//                 }
+//             }
+//             if(count>max){
+//                 max=count;
+//             }
+//         }
+//         System.out.println(max);
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {1,1,0,1,1,1};
+//         consecutiveZero(arr);
+//     }
+// }
