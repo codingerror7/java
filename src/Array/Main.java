@@ -693,3 +693,36 @@ import javax.swing.text.StyledEditorKit.BoldAction;
 //         consecutiveZero(arr);
 //     }
 // }
+
+
+//two multiply(like two sum):
+// public class Main{
+//     public static void twoMultiply(int arr[],int target){
+//         for(int i = 0; i < arr.length; i++){
+//             for(int j = i+1; j < arr.length; j++){
+//                 if(arr[i]*arr[j]==target){
+//                     System.out.println(arr[i] + "x" + arr[j] + " = " + target + " at index " + i + " and " + j );
+//                     break;
+//                 }
+//             }
+//         }
+//     }
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter array size:");
+//         int n = sc.nextInt();
+//         int arr[] = new int[n];
+//         System.out.println("enter array elements:");
+//         for(int i = 0; i < arr.length; i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         System.out.println("array is:");
+//         for(int i = 0; i < arr.length; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//         System.out.println("enter target:");
+//         int target = sc.nextInt();
+
+//         twoMultiply(arr, target);
+//     }
+// }
