@@ -726,3 +726,34 @@ import javax.swing.text.StyledEditorKit.BoldAction;
 //         twoMultiply(arr, target);
 //     }
 // }
+
+
+//Find the number that appears once, and other numbers twice.
+// public class Main{
+//     public static int appearOnce(int arr[]){
+//         int n = arr.length;
+
+//         for(int i = 0; i < n; i++){
+//             int count = 0;
+//             for(int j = 0; j < n; j++){
+//                 if(arr[i]==arr[j]){
+//                     count++;
+//                 }
+//             }
+//             if(count==1){
+//                 return arr[i];
+//             }
+//         }
+//         return -1;  //sentinel value : a special type of value used to terminate a loop/function/programme. the value used as sentinel must not be a part of real data in arrays, it must be different from real values in array.
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {4,1,2,1,2};
+//         int res = appearOnce(arr);
+//         if(res==-1){
+//             System.out.println("nothing..");
+//         }
+//         else{
+//             System.out.println(res);
+//         }
+//     }
+// }
