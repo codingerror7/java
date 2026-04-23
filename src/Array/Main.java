@@ -2,8 +2,6 @@ package src.Array;
 
 import java.util.*;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 
 //find duplicate element in array:
 // public class Main{
@@ -795,5 +793,49 @@ import javax.swing.text.StyledEditorKit.BoldAction;
 //     public static void main(String args[]){
 //         int arr[] = {1,0,2,1,0,2,1,2,1,2,0,0,1};
 //         sortBinary(arr);
+//     }
+// }
+
+
+//Find the Majority Element that occurs more than N/2 times
+// public class Main{
+//     public static void majorityElement(int arr[]){
+//         int n = arr.length;
+
+//         int half = n/2;
+//         int count0 = 0, count1 = 0, count2 = 0, count7 = 0;
+//         for(int i = 0; i < n; i++){
+//             if(arr[i]==0){
+//                 count0++;
+//             }
+//             else if(arr[i]==1){
+//                 count1++;
+//             }
+//             else if(arr[i]==2){
+//                 count2++;
+//             }
+//             else if(arr[i]==7){
+//                 count7++;
+//             }
+//         }
+
+//         //to compare count of each element and to find maximum count value:
+
+//         if(count0>half){
+//             System.out.println("majority element is 0");
+//         }
+//         else if(count1 > half){
+//             System.out.println("majority element is 1");
+//         }
+//         else if(count2>half){
+//             System.out.println("majority element is 2");
+//         }
+//         else if(count7 > half){
+//             System.out.println("majority element is 7");
+//         }
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {7,0,0,1,7,7,2,7,7};
+//         majorityElement(arr);
 //     }
 // }
