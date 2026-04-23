@@ -172,7 +172,7 @@ import java.util.*;
 // }
 
 
-//max sub array programme:
+//max sub array sum programme:
 // public class Main{
 //     public static void maxSubArrSum(int arr[]){
 //         int curr = 0;
@@ -837,5 +837,32 @@ import java.util.*;
 //     public static void main(String args[]){
 //         int arr[] = {7,0,0,1,7,7,2,7,7};
 //         majorityElement(arr);
+//     }
+// }
+
+
+//kadanes algorithm for max subarray sum:
+// public class Main{
+//     public static void maxSubArraySum(int arr[]){
+//         int n = arr.length; 
+//         int curr = 0;
+//         int max = Integer.MIN_VALUE;
+
+//         for(int i = 0; i < n; i++){
+//             curr = curr + arr[i];
+
+//             if(curr>max){
+//                 max=curr;
+//             }
+
+//             if(curr<0){
+//                 curr=0;
+//             }
+//         }
+//         System.out.print(max);
+//     }
+//     public static void main(String args[]){
+//         int arr[] = {-2,-3,4,-1,-2,1,5,-3};
+//         maxSubArraySum(arr);
 //     }
 // }
