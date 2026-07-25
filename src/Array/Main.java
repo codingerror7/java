@@ -1,7 +1,5 @@
 package src.Array;
 
-import java.util.*;
-
 
 //find duplicate element in array:
 // public class Main{
@@ -868,4 +866,49 @@ import java.util.*;
 // }
 
 
+// import java.util.Scanner;
+// public class Main{
+//         public static void main(String args[]){
+//                 Scanner sc = new Scanner(System.in);
+//                 int n = sc.nextInt();
+//                 int arr[] = new int[n];
+//                 System.out.println("enter array elements:");
+//                 for(int i = 0; i < arr.length; i++){
+//                         arr[i] = sc.nextInt();
+//                 }
+//                 System.out.println("positive numbers are:");
+//                 for(int i = 0; i < arr.length; i++){
+//                         if(arr[i]>0){
+//                                 System.out.println(arr[i]);
+//                         }
+//                 }
+//                 System.out.println("negative numbers are:");
+//                 for(int i = 0; i < arr.length; i++){
+//                         if(arr[i]<0){
+//                                 System.out.println(arr[i]);
+//                         }
+//                 }
+//                 System.out.println("zero is neither positive nor negative");
+//         }
+// }
+
+
+
+// public class Main{
+//         public static int countOccurences(int arr[], int key, int count){
+//                 for(int i = 0; i < arr.length; i++){
+//                         if(arr[i]==key){
+//                                 count++;
+//                         }
+//                 }
+//                 return count;
+//         }
+//         public static void main(String args[]){
+//                 int arr[] = {1,2,2,2,2,2,2,2,2,3,4,4,4,4,5,6};
+//                 int key = 2;
+//                 int count = 0;
+//                 int res = countOccurences(arr, key, count);
+//                 System.out.println(res);
+//         }
+// }
 
