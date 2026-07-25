@@ -866,3 +866,30 @@ import java.util.*;
 //         maxSubArraySum(arr);
 //     }
 // }
+
+
+import java.util.Scanner;
+public class Main{
+        public static void main(String args[]){
+                Scanner sc = new Scanner(System.in);
+                int n = sc.nextInt();
+                int arr[] = new int[n];
+                System.out.println("enter array elements:");
+                for(int i = 0; i < arr.length; i++){
+                        arr[i] = sc.nextInt();
+                }
+                System.out.println("positive numbers are:");
+                for(int i = 0; i < arr.length; i++){
+                        if(arr[i]>0){
+                                System.out.println(arr[i]);
+                        }
+                }
+                System.out.println("negative numbers are:");
+                for(int i = 0; i < arr.length; i++){
+                        if(arr[i]<0){
+                                System.out.println(arr[i]);
+                        }
+                }
+                System.out.println("zero is neither positive nor negative");
+        }
+}
