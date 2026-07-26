@@ -914,15 +914,3 @@ package src.Array;
 
 
 
-public class Main{
-    public static void main(String args[]){
-        int arr[] = {111,33,44,43,32,21,10,90,98,87,78,76,67};
-        int key = arr[0];
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i]>key){
-                key=arr[i];
-            }
-        }
-        System.out.println("largest element is" + " " + key);
-    }
-}
