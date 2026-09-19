@@ -956,22 +956,22 @@ package src.Array;
 // }
 
 
-import java.util.Scanner;
-public class Main{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        String name = sc.nextLine();
-        System.out.print("string is " + name + " ");
-        String rev = "";
-        for(int i = name.length()-1; i >= 0; i--){
-            rev = rev + name.charAt(i);
-        }
-        System.out.println();
-        if(name.equalsIgnoreCase(rev)){
-            System.out.println("yes,palindrom!");
-        }
-        else{
-            System.out.println("no palindrome!");
-        }
-    }
-}
+// import java.util.Scanner;
+// public class Main{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         String name = sc.nextLine();
+//         System.out.print("string is " + name + " ");
+//         String rev = "";
+//         for(int i = name.length()-1; i >= 0; i--){
+//             rev = rev + name.charAt(i);
+//         }
+//         System.out.println();
+//         if(name.equalsIgnoreCase(rev)){
+//             System.out.println("yes,palindrom!");
+//         }
+//         else{
+//             System.out.println("no palindrome!");
+//         }
+//     }
+// }
