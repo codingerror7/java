@@ -976,34 +976,3 @@ package src.Array;
 //     }
 // }
 
-import java.util.Scanner;
-public class Main{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter array size:");
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-        System.out.println("enter array elements:");
-        for(int i = 0; i < arr.length; i++){
-            arr[i] = sc.nextInt();
-        }
-        System.out.print("array elements are:");
-            for(int i = 0; i < arr.length; i++){
-                System.out.println(arr[i]);
-            }
-        
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
-        System.out.println("to find second largest:");
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i]>largest){
-                secondLargest=largest;
-                largest=arr[i];
-            }
-            else if(arr[i]>secondLargest && arr[i]!=largest){
-                secondLargest=arr[i];
-            }
-        }
-        System.out.println(secondLargest);
-    }
-}
