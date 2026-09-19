@@ -925,17 +925,34 @@ package src.Array;
 // }
 
 
+import java.util.Scanner;
 public class Main{
     public static void main(String args[]){
-        int arr[] = {1,2,3,29,0,2,5,6,7,8};
-        for(int i = 0; i < arr.length-1; i++){
-            for(int j = i+1; j<arr.length; j++){
-                if(arr[i]==arr[j+1]){
-                    System.out.println("duplicate element" + " " + i + " " + "is at" + " " + "index" + " " + j);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter array size:");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("array size is" + " " + n);
+        System.out.println("enter array elements:");
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("array elements are:");
+        for(int i = 0; i < arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+        Boolean flag = false;
+        for(int i = 0; i < arr.length; i++){
+            for(int j = i+1; j < arr.length; j++){
+                if(arr[i]==arr[j]){
+                    System.out.println("duplicate element" + " " + arr[i] + " " + "and" + " " + arr[j] + " " + "at index" + " " + i + " " + "and" + " " + j);
+                    flag = true;
                     break;
                 }
-                
             }
+        }
+        if(!flag){
+            System.out.println("no duplicate");
         }
     }
 }
