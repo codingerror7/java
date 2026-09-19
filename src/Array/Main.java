@@ -976,22 +976,3 @@ package src.Array;
 //     }
 // }
 
-public class Main{
-    public static void main(String args[]){
-        int arr[] = {1,6,3,7};
-        int target = 9;
-        Boolean flag = false;
-        for(int i = 0; i<arr.length; i++){
-            for(int j = i+1; j<arr.length; j++){
-                if(arr[i]+arr[j]==target){
-                    System.out.println(arr[i] + " " + "+" + " " + arr[j] + " " + "=" + " " + target + " " + "at index " + i + " " + "and" + " " + j);
-                    flag = true;
-                    break;
-                }
-            }
-        }
-        if(!flag){
-            System.err.println("no");
-        }
-    }
-}
