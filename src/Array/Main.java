@@ -936,3 +936,21 @@ package src.Array;
 //         System.out.println(rev);
 //     }
 // }
+
+
+//check palindrome:
+// public class Main{
+//     public static void main(String args[]){
+//         String name = "naman";
+//         String rev = "";
+//         for(int i = name.length()-1; i >= 0; i--){
+//             rev = rev + name.charAt(i);
+//         }
+//         if(name.equalsIgnoreCase(rev)){
+//             System.out.println("yes, palindrome!");
+//         }
+//         else{
+//             System.out.println("no");
+//         }
+//     }
+// }
