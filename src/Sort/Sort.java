@@ -24,3 +24,7 @@ package src.Sort;
 //         printArr(arr);
 //     }
 // }
+
+
+
+//selection sort
