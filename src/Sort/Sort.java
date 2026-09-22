@@ -37,7 +37,7 @@ package src.Sort;
 //                     minPos = j;
 //                 }
 //             }
-//             //swapping
+            //swapping
 //             int temp = arr[minPos];
 //             arr[minPos] = arr[i];
 //             arr[i] = temp;
