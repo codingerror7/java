@@ -1057,3 +1057,27 @@ import java.util.Arrays;
 //         }
 //     }
 // }
+
+//2D arrays basics:
+// public class Main{
+//     public static void main(String args[]){
+//         int n = 3;
+//         int m = 3;
+//         int arr[][] = new int[n][m];
+//         arr[0][0] = 3;
+//         arr[0][1] = 4;
+//         arr[0][2] = 1;
+//         arr[1][0] = 4;
+//         arr[1][1] = 6;
+//         arr[1][2] = 9;
+//         arr[2][0] = 12;
+//         arr[2][1] = 90;
+//         arr[2][2] = 87;
+//         for(int i = 0; i < n; i++){
+//             for(int j = 0; j < m; j++){
+//                 System.out.print(arr[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
