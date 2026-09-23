@@ -1085,46 +1085,46 @@ import java.util.Arrays;
 
 
 //find key in 2d matrix:
-import java.util.Scanner;
-public class Main{
-    public static Boolean findKey(int arr[][],int key, int n, int m){
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
-                if(arr[i][j]==key){
-                    System.out.println("key in row " + i + " " + " at column " + j);
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter no. of rows:");
-        int n = sc.nextInt();
-        System.out.println("enter no. of columns:");
-        int m = sc.nextInt();
-        int arr[][] = new int[n][m];
-        System.out.println("enter elements:");
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
-                arr[i][j] = sc.nextInt();
-            }
-        }
-        System.out.println("array elements are:");
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println("enter key to be found:");
-        int key = sc.nextInt();
-        if(findKey(arr, key, n, m)){
-            System.out.println("key found!");
-        }
-        else{
-            System.out.println("not found!");
-        }
-    }
-}
+// import java.util.Scanner;
+// public class Main{
+//     public static Boolean findKey(int arr[][],int key, int n, int m){
+//         for(int i = 0; i < n; i++){
+//             for(int j = 0; j < m; j++){
+//                 if(arr[i][j]==key){
+//                     System.out.println("key in row " + i + " " + " at column " + j);
+//                     return true;
+//                 }
+//             }
+//         }
+//         return false;
+//     }
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("enter no. of rows:");
+//         int n = sc.nextInt();
+//         System.out.println("enter no. of columns:");
+//         int m = sc.nextInt();
+//         int arr[][] = new int[n][m];
+//         System.out.println("enter elements:");
+//         for(int i = 0; i < n; i++){
+//             for(int j = 0; j < m; j++){
+//                 arr[i][j] = sc.nextInt();
+//             }
+//         }
+//         System.out.println("array elements are:");
+//         for(int i = 0; i < n; i++){
+//             for(int j = 0; j < m; j++){
+//                 System.out.print(arr[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
+//         System.out.println("enter key to be found:");
+//         int key = sc.nextInt();
+//         if(findKey(arr, key, n, m)){
+//             System.out.println("key found!");
+//         }
+//         else{
+//             System.out.println("not found!");
+//         }
+//     }
+// }
