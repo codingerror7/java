@@ -1122,7 +1122,7 @@ import java.util.Arrays;
 //         int key = sc.nextInt();
 //         if(findKey(arr, key, n, m)){
 //             System.out.println("key found!");
-//         }
+//         } 
 //         else{
 //             System.out.println("not found!");
 //         }
