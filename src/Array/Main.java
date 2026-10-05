@@ -1132,31 +1132,30 @@ import java.util.Arrays;
 
 import java.util.Scanner;
 public class Main{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter array size:");
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-        System.out.println("enter array elements:");
-        for(int i = 0; i < arr.length; i++){
-            arr[i] = sc.nextInt();
-        }
-        System.out.println("array elements are:");
-        for(int i = 0; i < arr.length; i++){
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println("reverse/no reverse?");
-        String select = sc.nextLine();
-        if(select.equalsIgnoreCase("reverse")){
-            for(int i = arr.length-1; i > 0; i--){
-                System.out.print(arr[i]+" ");
-            }
-        }
-        else if(select.equalsIgnoreCase("not reverse")){
-            for(int i = 0; i < arr.length; i++){
-                System.out.print(arr[i]+" ");
-            }
-        }
-
-    }
-}
+     public static void main(String args[]){
+         Scanner sc = new Scanner(System.in);
+         System.out.println("enter array size:");
+         int n = sc.nextInt();
+         int[] arr = new int[n];
+         System.out.println("array size is:" + n);
+         System.out.println("enter array elements:");
+         for(int i = 0; i < arr.length; i++){
+             arr[i] = sc.nextInt();
+         }
+         sc.nextLine();
+         System.out.println("now, reverse/not reverse?");
+         String select = sc.nextLine();
+         sc.close();
+         if(select.equalsIgnoreCase("reverse")){
+             System.out.println("reversed array is:");
+             for(int i = arr.length-1; i >= 0; i--){
+                 System.out.println(arr[i]);
+             }
+         }
+         else if(select.equalsIgnoreCase("not reverse")){
+             for(int i = 0; i < arr.length; i++){
+                 System.out.println(arr[i]);
+             }
+         }
+     }
+ }
