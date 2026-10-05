@@ -1129,3 +1129,23 @@ import java.util.Arrays;
 //     }  
 // }
 
+
+public class Main{
+    public static void main(String args[]){
+        int arr[] = {55,6,8,98,6,6,5456,77,65,4,3,2,234,567,654,65};
+        int largest = Integer.MIN_VALUE;
+        int smallest = Integer.MAX_VALUE;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i]>largest){
+                largest=arr[i];
+            }
+        }
+        System.out.println("largest element is" + " " + largest);
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i]<smallest){
+                smallest = arr[i];
+            }
+        }
+        System.out.println("smallest element is" + " " + smallest);
+    }
+}
