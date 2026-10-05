@@ -1129,6 +1129,7 @@ import java.util.Arrays;
 //     }  
 // }
 
+
 import java.util.Scanner;
 public class Main{
     public static void main(String args[]){
@@ -1144,18 +1145,9 @@ public class Main{
         for(int i = 0; i < arr.length; i++){
             System.out.print(arr[i] + " ");
         }
-        System.out.println("enter key to be found:");
-        int key = sc.nextInt();
-        Boolean flag = false;
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i]==key){
-                System.out.println("key found at index " + i);
-                flag = true;
-                break;
-            }
-        }
-        if(!flag){
-            System.out.println("no key found");
+        System.out.println("reversed array size:");
+        for(int i  = arr.length-1; i >= 0; i--){
+            System.out.print(arr[i]+" ");
         }
     }
 }
