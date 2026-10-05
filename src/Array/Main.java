@@ -1129,13 +1129,3 @@ import java.util.Arrays;
 //     }  
 // }
 
-public class Main{
-    public static void main(String args[]){
-        int arr[] = {22,3,4,6,7,65,76,56,90,878,87,65,4,44567,6,544,6,54,45,4};
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
-        for(int i = 0; i < arr.length; i++){
-            
-        }
-    }
-}
