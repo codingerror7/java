@@ -1105,7 +1105,7 @@ import java.util.Arrays;
 //         System.out.println("enter no. of columns:");
 //         int m = sc.nextInt();
 //         int arr[][] = new int[n][m];
-//         System.out.println("enter elements:");
+//         System.out.println("enter elements:");  
 //         for(int i = 0; i < n; i++){
 //             for(int j = 0; j < m; j++){
 //                 arr[i][j] = sc.nextInt();
@@ -1129,3 +1129,22 @@ import java.util.Arrays;
 //     }  
 // }
 
+public class Main{
+    public static void main(String args[]){
+        int arr[] = {1,1,0,0,1,1,1,1,0};
+        int maxCount = 0;
+        int currCount = 0;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i]==1){
+                currCount++;
+                if(maxCount<currCount){
+                    maxCount=currCount;
+                }
+            }
+            else{
+                currCount=0;
+            }
+        }
+        System.out.println(maxCount);
+    }
+}
