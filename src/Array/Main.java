@@ -1129,23 +1129,3 @@ import java.util.Arrays;
 //     }  
 // }
 
-
-public class Main{
-    public static void main(String args[]){
-        int arr[] = {1,2,3,4,5};
-        int key = 7;
-        Boolean flag = false;
-        for(int i = 0; i < arr.length-1; i++){
-            for(int j = 0; j < arr.length; j++){
-                if(arr[i]+arr[j]==key){
-                    System.out.println(arr[i] + " + " + arr[j] + " = " + key + " at index " + i + " and " + j);
-                    flag = true;
-                    break;
-                }
-            }
-        }
-        if(!flag){
-            System.out.println("target doesnt exist");
-        }
-    }
-}
