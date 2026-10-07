@@ -1129,6 +1129,7 @@ import java.util.Arrays;
 //     }  
 // }
 
+
 //max consecutive one's:
 // public class Main{
 //     public static void main(String args[]){
@@ -1149,3 +1150,38 @@ import java.util.Arrays;
 //         System.out.println(maxCount);
 //     }
 // }
+
+//total no. of all numbers in array:
+public class Main{
+    public static void main(String args[]){
+        int arr[] = {1,1,2,2,3,2,2,2,3,3,4,4,0,0,1,1,1,1};
+        int zeroCount = 0;
+        int oneCount = 0;
+        int twoCount = 0;
+        int threeCount = 0;
+        int fourCount = 0;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i]==0){
+                zeroCount++;
+            }
+            else if(arr[i]==1){
+                oneCount++;
+            }
+            else if(arr[i]==2){
+                twoCount++;
+            }
+            else if(arr[i]==3){
+                threeCount++;
+            }
+            else{
+                fourCount++;
+            }
+        }
+        System.out.println("zero count is " + zeroCount);
+        System.out.println("one count is " + oneCount);
+        System.out.println("two count is " + twoCount);
+        System.out.println("three count is " + threeCount);
+                System.out.println("four count is " + fourCount);
+
+    }
+}
