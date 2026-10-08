@@ -1187,3 +1187,42 @@ import java.util.Arrays;
 // }
 
 
+public class Main{
+    public static void main(String args[]){
+        int arr1[] = {1,2,3,4,5,6,7,8};
+        int arr2[] = {6,7,8,9,10,11,12};
+        int n= arr1.length;
+        int m = arr2.length;
+        int temp[] = new int[n+m];
+        int k = 0;
+        for(int i = 0; i < n; i++){
+            boolean flag = false;
+            for(int j = 0; j < k; j++){
+                if(arr1[i]==temp[j]){
+                    flag = true;
+                    break;
+                }
+            }
+            if(!flag){
+                temp[k]=arr1[i];
+                k++;
+            }
+        }
+        for(int i = 0; i < m; i++){
+            boolean flag = false;
+            for(int j = 0; j < k; j++){
+                if(arr2[i]==temp[j]){
+                    flag = true;
+                    break;
+                }
+            }
+            if(!flag){
+                temp[k]=arr2[i];
+                k++;
+            }
+        }
+        for(int i = 0; i < k; i++){
+            System.out.print(temp[i] + " ");
+        }
+    }
+}
