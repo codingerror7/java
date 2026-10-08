@@ -1187,3 +1187,24 @@ import java.util.Arrays;
 // }
 
 
+public class Main{
+    public static void main(String args[]){
+        int arr[] = {1,1,0,0,1,1,1,0};
+        int maxCount = 0;
+        int currCount = 0;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i]==1){
+                currCount++;
+                if(maxCount<currCount){
+                    maxCount=currCount;
+                }
+            }
+            else{
+                currCount=0;
+            }
+        }
+        System.out.println("one's are " + maxCount);
+    }
+}
+
+
